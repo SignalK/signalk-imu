@@ -4,7 +4,7 @@ This project provides the software for an IMU based on the Ultimate Sensor Fusio
 
 It uses both the above IMU board and the Butterfly STM32L433 Development Board available at https://www.tindie.com/products/TleraCorp/butterfly-stm32l433-development-board/
 
-Kris Winer has done extensive research into IMU solutions, see https://github.com/kriswiner. He may produce a ready-to-use IMU if there is a demand.
+Kris Winer has done extensive research into IMU solutions, see https://github.com/kriswiner. He may produce a single board version if there is a demand.
 
 This IMU provides:
 * Magnetic heading
