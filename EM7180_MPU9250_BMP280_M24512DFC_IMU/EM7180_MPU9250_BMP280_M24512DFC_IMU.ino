@@ -52,8 +52,8 @@
 #define redLed 13 // red led
 #define blueLed 26 // blue led 
 
-#define SerialDebug true
-//#define SerialDebug false
+//#define SerialDebug true
+#define SerialDebug false
 
 bool passThru = false;
 
