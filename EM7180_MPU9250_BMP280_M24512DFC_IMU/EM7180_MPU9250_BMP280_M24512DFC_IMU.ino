@@ -576,7 +576,7 @@ void loop()
     Serial.print(gy*PI/180.0f);
     Serial.print("},");
     //attitude
-    Serial.print("{\"path\": \"navigation.navigation.attitude\",\"value\": {");
+    Serial.print("{\"path\": \"navigation.attitude\",\"value\": {");
     Serial.print("\"roll\":");
     Serial.print(Roll);
     Serial.print(",\"pitch\":");
@@ -586,7 +586,7 @@ void loop()
     Serial.print("}},");                
     //temp
     Serial.print("{\"path\": \"environment.inside.temperature\",\"value\":");
-    Serial.print(temperature-273.15f, 2);
+    Serial.print(273.15f + temperature, 2);
     Serial.print("},");
     //pressure
     Serial.print("{\"path\": \"environment.outside.pressure\",\"value\":");
