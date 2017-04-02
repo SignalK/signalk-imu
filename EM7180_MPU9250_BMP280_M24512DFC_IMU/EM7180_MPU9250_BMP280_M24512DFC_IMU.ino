@@ -512,7 +512,8 @@ void loop()
       Yaw   = atan2(2.0f * (Quat[0] * Quat[1] + Quat[3] * Quat[2]), Quat[3] * Quat[3] + Quat[0] * Quat[0] - Quat[1] * Quat[1] - Quat[2] * Quat[2]);   
       Pitch = -asin(2.0f * (Quat[0] * Quat[2] - Quat[3] * Quat[1]));
       Roll  = atan2(2.0f * (Quat[3] * Quat[0] + Quat[1] * Quat[2]), Quat[3] * Quat[3] - Quat[0] * Quat[0] - Quat[1] * Quat[1] + Quat[2] * Quat[2]);
-    //  Pitch *= 180.0f / PI;
+      if(Yaw < 0) Yaw   += 2*PI ; // Ensure yaw stays between 0 and 360
+      //  Pitch *= 180.0f / PI;
      // Yaw   *= 180.0f / PI; 
       //Yaw   += 13.8f; // Declination at Danville, California is 13 degrees 48 minutes and 47 seconds on 2014-04-04
      // if(Yaw < 0) Yaw   += 360.0f ; // Ensure yaw stays between 0 and 360
