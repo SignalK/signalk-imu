@@ -2,11 +2,15 @@
  by: Kris Winer
  date: September 11, 2015
  
- adapted by: Robert Huitema
- date: Marcg 26, 2017
- 
- license: Beerware - Use this code however you'd like. If you 
+ original license: Beerware - Use this code however you'd like. If you 
  find it useful you can buy us a beer some time.
+ 
+ adapted by: Robert Huitema
+ date: March 26, 2017
+ 
+ Licence: Apache License Version 2.0, January 2004
+          http://www.apache.org/licenses/
+
  
  The EM7180 SENtral sensor hub is not a motion sensor, but rather takes raw sensor data from a variety of motion sensors,
  in this case the MPU9250 (with embedded MPU9250 + AK8963C), and does sensor fusion with quaternions as its output. The SENtral loads firmware from the
