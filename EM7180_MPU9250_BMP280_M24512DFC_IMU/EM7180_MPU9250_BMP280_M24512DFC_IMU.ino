@@ -574,20 +574,20 @@ void loop()
     //heading
     Serial.print("{\"context\": \"vessels.self\",\"updates\": [{\"values\": [");
     Serial.print("{\"path\": \"navigation.headingMagnetic\",\"value\":");
-    Serial.print(Yaw);
+    Serial.print(Yaw,8);
     Serial.print("},");
     //rot
     Serial.print("{\"path\": \"navigation.rateOfTurn\",\"value\":");
-    Serial.print(gy*PI/180.0f);
+    Serial.print(gy*PI/180.0f,8);
     Serial.print("},");
     //attitude
     Serial.print("{\"path\": \"navigation.attitude\",\"value\": {");
     Serial.print("\"roll\":");
-    Serial.print(Roll);
+    Serial.print(Roll,8);
     Serial.print(",\"pitch\":");
-    Serial.print(Pitch);
+    Serial.print(Pitch,8);
     Serial.print(",\"yaw\":");
-    Serial.print(Yaw);
+    Serial.print(Yaw,8);
     Serial.print("}},");                
     //temp
     Serial.print("{\"path\": \"environment.inside.temperature\",\"value\":");
